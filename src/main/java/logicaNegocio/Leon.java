@@ -2,21 +2,18 @@ package logicaNegocio;
 
 public class Leon extends Animal {
 
-    private TipoHabitat habitat;
-
     public Leon() {
-        this.habitat = TipoHabitat.TERRESTRE;
+        super(TipoHabitat.TERRESTRE);
     }
 
+    @Override
     public String emitirSonido() {
-        return "Rugido";
+        return "Rugido"; 
     }
 
+    @Override
     public String obtenerDieta() {
-        return "Carnívoro";
-    }
-
-    public TipoHabitat getHabitat() {
-        return habitat;
+        return "Carnívoro"; 
     }
 }
+
