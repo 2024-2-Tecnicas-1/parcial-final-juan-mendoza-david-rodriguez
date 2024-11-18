@@ -6,12 +6,10 @@ public class Delfin extends Animal {
         super(TipoHabitat.ACUATICO); 
     }
 
-    @Override
     public String emitirSonido() {
         return "Silbido";  
     }
 
-    @Override
     public String obtenerDieta() {
         return "Piscívoro";
     }
